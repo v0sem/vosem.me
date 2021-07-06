@@ -7,12 +7,17 @@
     --yellow:  #F9AC53;
     --rose: #F62E97;
     --blue: #153CB4;
-  }
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: black;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
+    padding-bottom: 250px;
 }
 
 h1 {
@@ -21,12 +26,18 @@ h1 {
     font-size: 100px;
     font-weight: 100;
     color: var(--yellow);
+    padding-top: 500px;
+}
+
+img {
+    width: 100%;
 }
 
 .table{
     display: table;
     width: 90%;
     margin: auto;
+    padding-bottom: 500px;
 }
 
 ul#nav-menu {
@@ -45,8 +56,31 @@ ul#nav-menu li {
 ul#nav-menu li a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     padding-left: 20px;
     padding-right: 20px;
-    border: 1px ridge ;
+    border: 1px ridge var(--rose);
+}
+
+h2 {
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    color: var(--mardi);
+}
+
+p {
+    width: 50%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+p a {
+    color: white;
+}
+
+.space-200 {
+    margin-top: 200px;
 }
