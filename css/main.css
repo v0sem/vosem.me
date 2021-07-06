@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Monoton&display=swap');
+
+:root {
+    --violet: #300350;
+    --mardi: #94167F;
+    --pink: #E93479;
+    --yellow:  #F9AC53;
+    --rose: #F62E97;
+    --blue: #153CB4;
+  }
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 100;
+    color: var(--yellow);
+}
+
+.table{
+    display: table;
+    width: 90%;
+    margin: auto;
+}
+
+ul#nav-menu {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 0;
+	list-style: none;
+}
+
+ul#nav-menu li {
+    display: inline;
+    margin: auto;
+}
+
+ul#nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px ridge ;
+}
