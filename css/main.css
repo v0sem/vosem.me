@@ -17,7 +17,6 @@ body {
     background-color: black;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
-    padding-bottom: 250px;
 }
 
 h1 {
@@ -26,7 +25,8 @@ h1 {
     font-size: 100px;
     font-weight: 100;
     color: var(--yellow);
-    padding-top: 500px;
+    margin: auto;
+    width: 100%;
 }
 
 img {
@@ -37,7 +37,6 @@ img {
     display: table;
     width: 90%;
     margin: auto;
-    padding-bottom: 500px;
 }
 
 ul#nav-menu {
@@ -77,10 +76,33 @@ p {
     font-size: 20px;
 }
 
-p a {
+a {
     color: white;
 }
 
-.space-200 {
-    margin-top: 200px;
+i {
+    color: var(--pink);
+}
+
+p span {
+    font-weight: bold;
+    color: var(--pink)
+}
+
+.full-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 25px
+}
+
+.w100 {
+    width: 100%;
+    text-align: center;
+}
+
+.go-back {
+    font-size: 16px;
 }

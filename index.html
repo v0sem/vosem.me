@@ -3,31 +3,75 @@
         <title>vosem</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <img src="img/title-image.png" alt="">
-        <h1>VOSEM.ME</h1>
-        <div class="table">
-            <ul id="nav-menu">
-                <li><a href="#about">About me</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-        </div>
-        <h2 id="about">About me</h2>
-        <p>
-            My name is Pablo, my pronouns are he/him and I am from Spain. I have lived a year in the US. Im very interested in music and I'm  currently learning to play the guitar.
-        </p>
-        <p>
-            I'm a computer engineer student, mainly interested in AI and systems administration. I have worked making and managing django webservices in AWS and helped in the IT department of another company.
-        </p>
-        <p>
-            I'm also an avid tabletop RPG player and like to DM in various settings, like Dungeons & Dragons or Vampire: the Masquerade. I have also created two D&D subclasses. The <a href="https://homebrewery.naturalcrit.com/share/KkajNSZC" target="_blank">Divination Domain</a> for the Cleric and the <a href="https://homebrewery.naturalcrit.com/share/6Yo4m9le" target="_blank">Oath of Love</a> for the Paladin.
-        </p>
+        <a href="#home"><img src="img/title-image.png" alt=""></a>
 
-        <h2 id="contact" class="space-200">Contact</h2>
-        <h2 id="projects" class="space-200">Projects</h2>
-        <h2 id="faq" class="space-200">FAQ</h2>
+        <div id="home" class="full-page">
+            <div class="w100">
+                <h1>VOSEM.ME</h1>
+                <div class="table">
+                    <ul id="nav-menu">
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <!--<li><a href="#faq">FAQ</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="full-page">
+            <div class="w100">
+                <h2>About me</h2>
+                <p>
+                    My name is Pablo, my pronouns are he/him and I am from Spain. I have lived a year in the US. I'm very interested in music and I'm  currently learning to play the guitar.
+                </p>
+                <p>
+                    I'm a computer engineer student, mainly interested in AI and systems administration. I have worked making and managing Django webservices in AWS and helped in the IT department of another company.
+                </p>
+                <p>
+                    I'm also an avid tabletop RPG player and like to DM and play in various settings, like Dungeons & Dragons or Vampire: the Masquerade. I have also created two D&D subclasses. The <a href="https://homebrewery.naturalcrit.com/share/KkajNSZC" target="_blank">Divination Domain</a> for the Cleric and the <a href="https://homebrewery.naturalcrit.com/share/6Yo4m9le" target="_blank">Oath of Love</a> for the Paladin.
+                </p>
+                <p><a class="go-back" href="#home">Back</a></p>
+            </div>
+        </div>
+
+        <div id="contact" class="full-page">
+            <div class="w100">
+                <h2>Contact</h2>
+                <p>
+                    <i class="fa fa-envelope"></i> <span>Email:</span> <a href="mailto:progpabsanch@gmail.com" target="_blank">progpabsanch@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fa fa-github"></i> <span>Github:</span> <a href="https://github.com/v0sem">v0sem</a>
+                </p>
+                <p>
+                    <i class="fa fa-linkedin"></i> <span>LinkedIn:</span> <a href="https://www.linkedin.com/in/pablo-s%C3%A1nchez-ab568a161/">Pablo Sánchez</a>
+                </p>
+                <p><a class="go-back" href="#home">Back</a></p>
+            </div>
+        </div>
+
+        <div id="projects" class="full-page">
+            <div class="w100">
+                <h2>Projects</h2>
+                <p>
+                    <span>D&D app:</span> A D&D related web service with a possible port to an android app. Its going to be based in Django and I'll have to refresh on bootstrap to make it look nice.
+                </p>
+                <p>
+                    <span>TFG - the continuation:</span> My final paper for my degree was a neural network that recognizes different household sounds like vacuums, pets or speech. It uses the espNet ASR library. I'd like to iterate on that to make it about music. All suggestions are welcome!
+                </p>
+                <p><a class="go-back" href="#home">Back</a></p>
+            </div>
+        </div>
+
+        <!--<div id="faq" class="full-page">
+            <div class="w100">
+                <h2>FAQ</h2>
+                <p><a class="go-back" href="#home">Back</a></p>
+            </div>
+        </div>-->
     </body>
 </html>
