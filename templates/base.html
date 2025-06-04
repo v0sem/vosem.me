@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vosem.dev</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="shortcut icon" href="static/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Place favicon.ico in the root directory -->
+
+</head>
+
+<body>
+    <img id="title-image" src="static/img/title-image.png" alt="">
+    <div id="main">
+        <div class="navbar">
+            <ul>
+                <li><i class="fa fa-terminal" aria-hidden="true"></i></li>
+                <li><a href="{{ url_for('index') }}">HOME</a></li>
+                <li><a href="{{ url_for('index') }}">PROJECTS</a></li>
+                <li><a href="{{ url_for('index') }}">PICTURES</a></li>
+                <li><a href="{{ url_for('index') }}">CONTACT</a></li>
+            </ul>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+
+</html>
