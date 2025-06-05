@@ -73,19 +73,28 @@ h2 {
     color: var(--mardi);
 }
 
-p {
+.cblock {
     font-size: 15px;
     padding-bottom: 50px;
-    padding-top: 10px;
+    padding-top: 50px;
     border-bottom: 1px solid var(--yellow);
     width: 80%;
     align-self: center;
     margin: auto;
+    display: flex;
 }
 
-p span {
+.cblock span {
     font-weight: bold;
     color: var(--pink)
+}
+
+.cblock ul {
+    list-style-type: none;
+}
+
+.cblock img {
+    height: 200px;
 }
 
 .full-page {

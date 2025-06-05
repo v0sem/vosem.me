@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+{% for photo in photos %}
+<div class="cblock">
+    <a href="{{photo.img}}" target="_blank"><img src="{{photo.img}}" alt="{{photo.desc}}"></a>
+    <ul>
+        <li><span>DESCRIPTION </span>{{photo.desc}}</li>
+        <li><span>DATE </span>{{photo.date}}</li>
+        <li><span>LOCALE </span>{{photo.local}}</li>
+    </ul>
+</div>
+{% endfor %}
+{% endblock %}
