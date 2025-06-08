@@ -84,9 +84,29 @@ h2 {
     display: flex;
 }
 
+.cblock p {
+    display: inline;
+    flex-shrink: 1;
+    line-height: 20px;
+}
+
+.cblock p a {
+    text-decoration: none;
+    font-style: italic;
+    color: var(--yellow);
+}
+
+.cblock p br {
+    line-height: 22px;
+    display: block;
+    margin: 10px 0;
+}
+
 .cblock span {
     font-weight: bold;
-    color: var(--pink)
+    color: var(--pink);
+    margin-right: 15px;
+    flex-shrink: 0;
 }
 
 .cblock ul {
