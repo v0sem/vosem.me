@@ -46,8 +46,8 @@ def index():
 @app.route("/photos")
 def photos():
     photos = []
-    for file in os.listdir("static/img/photos"):
-        mdata = get_file_meta("static/img/photos/" + file)
+    for file in os.listdir("vosem/static/img/photos"):
+        mdata = get_file_meta("vosem/static/img/photos/" + file)
 
         if mdata is None:
             continue

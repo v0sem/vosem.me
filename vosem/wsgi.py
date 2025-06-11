@@ -1,4 +1,4 @@
-from vosem import app
+from vosem.web import app
 
 if __name__ == "__main__":
     app.run()
