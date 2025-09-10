@@ -1,3 +1,5 @@
+"""Main server file for website."""
+
 from flask import Flask, render_template
 import os
 from exif import Image
@@ -8,6 +10,7 @@ app = Flask(__name__)
 
 
 def get_locale(latitude, longitude):
+    """Return approximate location from coordinates."""
     dlat = (-1 if latitude[4] == "S" else 1) * (
         latitude[0] + latitude[1] / 60 + latitude[2] / 3600
     )
@@ -20,6 +23,7 @@ def get_locale(latitude, longitude):
 
 
 def get_file_meta(filepath):
+    """Fetch specific metadata from given photo."""
     with open(filepath, "rb") as photof:
         photoi = Image(photof)
 
@@ -33,18 +37,32 @@ def get_file_meta(filepath):
 
         photodate = None
         if photoi.get("datetime_original", "--") != "--":
-            photodate = parse(photoi.datetime_original).strftime("%d/%m/%Y %H:%M:%S")
+            photodate = parse(photoi.datetime_original).strftime(
+                "%d/%m/%Y %H:%M:%S"
+            )
 
-        return photoi.get("image_description", "--"), photodate or "--", locale or "--"
+        return (
+            photoi.get("image_description", "--"),
+            photodate or "--",
+            locale or "--",
+        )
 
 
 @app.route("/")
 def index():
+    """Serve main forum-like landing page."""
     return render_template("index.html")
+
+
+@app.route("/resume")
+def resume():
+    """Serve resume file."""
+    return render_template("resume.html")
 
 
 @app.route("/photos")
 def photos():
+    """Serve portfolio page and load all the photos in folder."""
     photos = []
     for file in os.listdir("vosem/static/img/photos"):
         mdata = get_file_meta("vosem/static/img/photos/" + file)
