@@ -17,7 +17,7 @@ html {
 body {
     background-color: black;
     color: white;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Roboto Condensed', monospace;
 }
 
 h1 {
@@ -75,7 +75,7 @@ h2 {
 }
 
 .cblock {
-    font-size: 17px;
+    font-size: 18px;
     padding-bottom: 50px;
     padding-top: 50px;
     border-bottom: 1px solid var(--yellow);
