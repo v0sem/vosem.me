@@ -37,9 +37,7 @@ def get_file_meta(filepath):
 
         photodate = None
         if photoi.get("datetime_original", "--") != "--":
-            photodate = parse(photoi.datetime_original).strftime(
-                "%d/%m/%Y %H:%M:%S"
-            )
+            photodate = parse(photoi.datetime_original).strftime("%d/%m/%Y %H:%M:%S")
 
         return (
             photoi.get("image_description", "--"),
