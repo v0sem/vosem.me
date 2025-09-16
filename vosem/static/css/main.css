@@ -91,6 +91,12 @@ h2 {
     line-height: 20px;
 }
 
+.multip div {
+    border-bottom: 1px solid var(--rose);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .cblock p a {
     text-decoration: none;
     font-style: italic;
