@@ -100,7 +100,7 @@ h2 {
 .cblock p a {
     text-decoration: none;
     font-style: italic;
-    color: var(--yellow);
+    color: white;
 }
 
 .cblock p br {
